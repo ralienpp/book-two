@@ -1,0 +1,23 @@
+\documentclass[a4paper]{article}
+\usepackage{pdfpages}
+\usepackage{lastpage}
+\begin{document}
+	\includepdf[pages=-,booklet,landscape]{main.pdf}
+	
+	
+	% the logic below needs to be thoroughly checked
+	
+	% To make sure that the first page includes both, the front and back cover,
+	% we process the first and last page
+	%\includepdf[pages={1,last}, nup=1x2, landscape=false, angle=90]{main.pdf}
+
+	% Then we add the rest of the document, skipping the first and last pages.
+	% But first, we have to get the total number of pages and figure out what
+	% the number of the "last but one" page is.
+	%\edef\TotalPages{\the\pdflastximagepages}
+	%\edef\SecondToLastPage{\the\numexpr\TotalPages-1}
+
+	% Add the rest
+	%\includepdf[pages=2-\SecondToLastPage, booklet, landscape]{main.pdf}
+
+\end{document}
