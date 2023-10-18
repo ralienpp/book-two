@@ -1,4 +1,4 @@
-\documentclass[a5paper,11pt]{memoir}
+\documentclass[a5paper,12pt]{memoir}
 \usepackage[T2A,T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
@@ -66,7 +66,7 @@
 
 
 \title{\begin{otherlanguage*}{russian}
-0! Рассказы о тех, кто не заблудился
+0! Рассказы о тех, \\кто не заблудился
 \end{otherlanguage*}}  
 % \author{Alex Railean}
 \author{}
@@ -101,6 +101,7 @@
 
 \date{} % so no date is shown under the title
 \maketitle
+\vspace{-2cm}
 \begin{center}
 \includegraphics[height=9cm]{images/tree-cover} 
 
@@ -257,9 +258,10 @@
 \begin{figure}[h]
 	%\hspace{-1cm}
 	\centering
-	\includegraphics[width=0.6\paperwidth]{images/hoofprints.jpeg}
+	\includegraphics[width=0.5\paperwidth]{images/hoofprints.jpeg}
 	\caption{Следы копыт в грязи}
 \end{figure}
+
 
 
 В её голове зародился план. Она объяснила секретарю, что они могут найти обратный путь, нужно всего-навсего внимательно смотреть и находить следы. Оба обрадовались, хотя были очень усталыми.
@@ -267,6 +269,7 @@
 Зебра сделала сперва один шаг, потом второй, третий, четвертый, пятый, шестой\ldots Первый шаг был самым сложным, но с каждым шагом -- уверенность росла, и зебра совсем забыла о своей усталости. Хотя была ночь, мягкий отблеск луны освещал землю достаточно хорошо.
 
 \begin{figure}[h]
+	\vspace{-0.5cm}
 	\centering
 	\includegraphics[width=\columnwidth]{images/moonwalk.jpeg}
 	\caption{Ночное путешествие}
@@ -291,15 +294,20 @@
 
 \begin{figure}[h]
 	%\centering
-	\hspace{-1cm}\includegraphics[width=\paperwidth]{images/baobab-nap.jpeg}
+	%\hspace{-1cm}
+	\includegraphics[width=0.85\paperwidth]{images/baobab-nap.jpeg}
 	\caption{Долгожданный отдых}
 \end{figure}
 
 
 \clearpage
 
-\section*{Что растёт рядом с твоим домом}
+\vspace{-2cm}
+\subsubsection*{Что растёт рядом с твоим домом}
+
 \begin{table}[h]
+	\fontsize{10pt}{12pt}\selectfont
+	{
 	\begin{tabular}{ccc}
 		\includegraphics[height=4cm]{images/tree-guide/oak-tree} & \includegraphics[height=4cm]{images/tree-guide/chestnut-tree} & \includegraphics[height=4cm]{images/tree-guide/maple-tree}             \\
 		\includegraphics[height=4cm]{images/tree-guide/oak-leaf} & \includegraphics[height=4cm]{images/tree-guide/chestnut-leaf} & \includegraphics[height=4cm]{images/tree-guide/maple-leaf} \\		
@@ -316,14 +324,15 @@
 		Acorn        &  Conker	  & Samara  \\    
 		die Eichel &  die Kastanie    &     die Flügelnuss\\    
 	\end{tabular}
+}
 \end{table}
 
 \clearpage
 \begin{table}[h]
+	\fontsize{10pt}{12pt}\selectfont
+	{
 	\begin{tabular}{ccc}
 		\includegraphics[height=4cm]{images/tree-guide/birch-tree} & \includegraphics[height=4cm]{images/tree-guide/willow-tree} & \includegraphics[height=4cm]{images/tree-guide/populus-tree}             \\
-		%\includegraphics[height=4cm]{images/tree-guide/willow-tree} & \includegraphics[height=4cm]{images/tree-guide/willow-tree} & \includegraphics[height=4cm]{images/tree-guide/willow-tree} \\		
-		
 		Берёза  &  Ива        &   Тополь            \\
 		Mesteacăn  &  Salcie        &   Plop \\
 		Birch  &   Weeping willow        &   Poplar \\
@@ -339,6 +348,7 @@
 		Pine, cone        &  Spruce, cone	  & Linden \\    
 		die Kiefer, der Zapfen &  die Fichte, der Zapfen    &     die Linden\\    
 	\end{tabular}
+	}
 \end{table}
 
 
@@ -393,10 +403,13 @@
 \thispagestyle{empty}  % to not have a page# here
 
 
-\section*{Другие книги нашего издательства}
-% \vspace{2cm}
 
+\subsubsection*{Другие книги нашего издательства}
+% \vspace{2cm}
 \begin{table}[h]
+\fontsize{10pt}{10pt}\selectfont
+{
+
 \begin{tabular}{ccc}
 \includegraphics[height=4cm]{images/cava-bien} & \includegraphics[height=4cm]{images/suslik} & \includegraphics[height=4cm]{images/sobachevich}             \\
  Сова Бьен и Тихо-  &  Сусленский суслик        &   Собакевич и            \\
@@ -406,17 +419,19 @@
  Клён и вертолётик       &  Дверь в космос    &     Секретный ключ  \\    
         &      &  секретаря    \\
 \end{tabular}
+}
 \end{table}
 
-\subsection{Автор и обратная связь}
+\subsubsection{Автор и обратная связь}
 \hspace{-1cm}
 \noindent
-\begin{tabular}{p{12cm}p{2cm}}
+\begin{tabular}{p{11cm}p{2cm}}
 \footnotesize{Это истории из частично-восстановленного архива, найденного среди развалин архаического вычислительного центра, на дне озера $0x\Sigma \alpha \phi^4_5\bigoplus$. Исходя из метаданных, они были написаны в первой половине XXI века Ручной эпохи Досингулярной эры. Предполагаемое имя автора Papa de la M{\"u}nchen, или Папа де ла Мюнхен, или Папа Мюнхенксий (возможно искажение транслитерации). % Среди блоков данных был найден и фрагмент который не поддавался текстовой интерпретации, мы прилагаем его в виде двухмерной монохромной матрицы. Остальные двухмерные матрицы в сборнике были сгенерированны нами, исходя из контекста.
 О неточностях и ошибках сообщайте в Департамент Интерпретаций: alex\faIcon{cat}railean.net.} & \hspace{-5mm}\raisebox{-2.2cm}{ \includegraphics[height=2.5cm]{images/maskavatar-trimmed.jpg}} \\
 
-\includegraphics[height=1.3cm]{images/payments/qr-btc.pdf} \hspace{0.5cm} \includegraphics[height=1.3cm]{images/payments/qr-eth.pdf} \hspace{0.5cm} \href{https://paypal.me/ralienpp}{\includegraphics[height=1.3cm]{images/payments/qr-paypal.pdf}} \hspace{5cm} \href{https://creativecommons.org/licenses/by-sa/4.0/}{\includegraphics[height=0.3cm]{images/cc-by-sa.eps}}&
+\includegraphics[height=1.3cm]{images/payments/qr-btc.pdf} \hspace{0.5cm} \includegraphics[height=1.3cm]{images/payments/qr-eth.pdf} \hspace{0.5cm} \href{https://paypal.me/ralienpp}{\includegraphics[height=1.3cm]{images/payments/qr-paypal.pdf}} \hspace{4cm} \href{https://creativecommons.org/licenses/by-sa/4.0/}{\includegraphics[height=0.3cm]{images/cc-by-sa.eps}}&
 \end{tabular}
+
 
 \end{document}
 
