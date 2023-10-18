@@ -1,0 +1,38 @@
+name: Build LaTeX document and other outputs
+on:
+  release:
+    types: [published]
+jobs:
+  build_pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Compile main PDF for screens
+        uses: docker://texlive/texlive
+        with:
+          args: latexmk -pdflatex main.tex
+
+      - name: Compile booklet PDF for printing
+        uses: docker://texlive/texlive
+        with:
+          args: latexmk -pdflatex booklet.tex
+
+      - name: Archive PDF outputs
+        run: |
+          mkdir pdf-outputs
+          cp main.pdf pdf-outputs/two.pdf
+          cp booklet.pdf pdf-outputs/two-booklet.pdf
+        working-directory: ${{ github.workspace }}
+
+
+      - name: Upload PDFs via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          local-dir: pdf-outputs/
+          server-dir: /
