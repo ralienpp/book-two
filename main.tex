@@ -1,7 +1,7 @@
 \documentclass[a5paper,12pt]{memoir}
 \usepackage[T2A,T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[russian]{babel}
+\usepackage[romanian,russian]{babel}
 \usepackage{multicol}
 \usepackage{hyperref}
 \usepackage[math]{anttor}  % set font to Antykwa Torunska
@@ -50,7 +50,6 @@
 % Syntactic sugar: a command for direct speech of various characters - it will be rendered as
 % a quote with an emphasis. For quoting non-speech, use \textquote
 \newcommand{\say}[1]{\emph{\textquote{#1}}}
-
 
 % this is used to set the metadata of the PDF itself
 % see https://en.wikibooks.org/wiki/LaTeX/Hyperlinks#Customization
@@ -556,7 +555,10 @@
 
 \clearpage
 
+
 \section*{Greierul, furnica și veverița}
+\selectlanguage{romanian}
+\setquotestyle{romanian}
 \yinipar{\color{blue}A} u fost odată un greier, o furnică și o veveriță. Fiecare își petrecea ziua în felul său. Greierul se distra, cânta din zori până seară. Furnica era harnică ---  lucra, aduna boabe de grâu și ovăz în mușuroiul său. Zi de zi furnica îi zicea greierului: \antinline\nolinebreak{\say{Greiere! Pune mâna pe unelte, sapă și tu în grădină, mai strânge și tu niște frunze, că vine iarna!}}
 
 Greierul sau n-o auzea, sau n-o înțelegea --- nu făcea nimic, doar cânta și dormea.
@@ -565,7 +567,7 @@ Greierul sau n-o auzea, sau n-o înțelegea --- nu făcea nimic, doar cânta și
 	%	\vspace{-0.5cm}
 	\centering
 	\includegraphics[width=0.95\linewidth]{images/cricket-whistling}
-	\caption*{Greierul savurează vara.}
+	\caption{Greierul savurează vara}
 \end{figure}
 
 
@@ -573,7 +575,7 @@ Greierul sau n-o auzea, sau n-o înțelegea --- nu făcea nimic, doar cânta și
 	%	\vspace{-0.5cm}
 	\centering
 	\includegraphics[width=0.95\linewidth]{images/ant-berates-cricket}
-	\caption*{Furnica în dialog constructiv cu greierul.}
+	\caption{Furnica în dialog constructiv cu greierul}
 \end{figure}
 
 
@@ -585,7 +587,7 @@ Furnica tot lucra și lucra, mormanul ei de grăunțe devenea tot mai mare și m
 %	\vspace{-0.5cm}
 	\centering
 	\includegraphics[width=0.95\linewidth]{images/ant-wheat-mountain}
-	\caption*{Furnica se bucură de roadele muncii sale.}
+	\caption{Furnica se bucură de roadele muncii sale}
 \end{figure}
 
 
@@ -596,7 +598,7 @@ Când veni iarna, greieul nu avea ce mânca și era rupt de foame! Îi tremurau 
 %	\hspace{-1.1cm}
 		\centering
 	\includegraphics[width=0.9\linewidth]{images/cricket-frozen}
-	\caption*{Greierul flămând și înghețat.}
+	\caption{Greierul flămând și înghețat}
 \end{figure}
 
 
@@ -613,7 +615,7 @@ Istoria asta se repeta din an în an. Greierul era înfometat, iar furnica dorme
 	%	\vspace{-0.5cm}
 	\centering
 	\includegraphics[width=0.95\linewidth]{images/squirel-stashing}
-	\caption*{Aventura veveriței.}
+	\caption{Aventura veveriței}
 \end{figure}
 
 
@@ -630,7 +632,7 @@ Iată că în unul din ani iarna grea a fost urmată de o primăvară foarte cal
 	\hspace{-1.1cm}
 	%	\centering
 	\includegraphics[width=1.2\linewidth]{images/wave}
-	\caption*{Torentul de apă distruge totul în calea sa.}
+	\caption{Torentul de apă distruge totul în calea sa}
 \end{figure}
 
 
@@ -642,7 +644,7 @@ Mușuroiul furnicii a fost inundat, unele semințe s-au dus cu șuvoiul de apă,
 	\hspace{-1.1cm}
 %	\centering
 	\includegraphics[width=1.2\linewidth]{images/ant-wheat-mold}
-	\caption*{Rezervele de grâu au prins mucegai.}
+	\caption{Rezervele de grâu au prins mucegai}
 \end{figure}
 
 
@@ -653,7 +655,7 @@ A pierdut și veverița proviziile din valea râului. Însă din alte nuci pe ca
 	%	\vspace{-0.5cm}
 	\centering
 	\includegraphics[width=0.95\linewidth]{images/squirrel-yield}
-	\caption*{Dividendele.}
+	\caption{Dividendele}
 \end{figure}
 
 
@@ -670,8 +672,10 @@ Fiecare a învățat ceva. Greierul --- să lucreze și să coopereze; furnica -
 %	\hspace{-1.1cm}
 	%	\centering
 	\includegraphics[width=\linewidth]{images/cricket-ant-squirrel}
-%	\caption*{Rezervele de grâu au prins mucegai.}
+%	\caption{Rezervele de grâu au prins mucegai}
 \end{figure}
+
+\selectlanguage{russian}
 
 % this is the back-cover of the book, we ensure there's
 % a blank page before it, this makes it easier to produce booklets
